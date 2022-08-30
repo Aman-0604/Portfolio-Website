@@ -1,0 +1,46 @@
+/* Will add flex class to any div so as to make it a flex box */
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top{
+    text-align: center;
+    width: 100%;
+    height: 33%;
+}
+.middle{
+    height: 34%;
+}
+.bottom{
+    text-align: center;
+    height: 33%;
+}
+
+/* Hovering on any of the main sections  */
+.main-sections{
+    height: 16.6%;
+    font-size: 18px;;
+    color: #909096;
+}
+.main-sections:hover{
+    color: #0DFDD7;
+}
+hr{
+    width: 131%;
+    margin-left: -22px;
+    border: 0.5px solid #909096;
+}
+
+/* Icon styling */
+svg{
+    padding: 5px;
+    color: #909096;
+}
+
+img{
+    width: 100px;
+}
+
+
