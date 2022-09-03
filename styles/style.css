@@ -1,0 +1,95 @@
+                                            /* App.css */
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.left_main{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    width: 9%;
+    height: 100%;
+    border-right: 1px solid #909096;
+}
+.right_main{
+    background-color: #1D1D1D;
+    width: 100%;
+}
+  
+  
+                                            /* Navbar.css */
+
+
+/* Will add flex class to any div so as to make it a flex box */
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top{
+    text-align: center;
+    width: 100%;
+    height: 33%;
+}
+.middle{
+    width: 100%;
+    height: 34%;
+}
+.bottom{
+    text-align: center;
+    height: 33%;
+}
+
+/* Hovering on any of the main sections  */
+.main-sections{
+    height: inherit;
+    font-size: 16px;
+    color: #909096;
+    border: 0.5px solid #909096;
+    width: 100%;
+}
+.main-sections:hover{
+    color: #0DFDD7;
+    cursor: pointer;
+}
+/* Icon styling */
+svg{
+    padding: 5px;
+    color: #909096;
+}
+
+img{
+    width: 50px;
+}
+
+
+                                            /* Main.css */
+
+.parent_container{
+    height:4800px;
+}
+.common_property{
+    color: white;
+    height:100%;
+    width: 80%;
+    border:1px solid white;
+}
+.projects_grid{
+    display: grid;
+    width: 80%;
+    gap: 1rem;
+    justify-content: center;
+    grid-template-columns: 33% 33% 33%;
+}
+.grid_item_common{
+    border: 1px solid white;
+    background-color: aqua;
+    color: black;
+}
+                                            
+                                            
