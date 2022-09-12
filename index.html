@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <div class="main">
         <div class="left_main">
             <div class="top flex"><img src="logo.png" alt="logo"></div>
@@ -46,8 +45,27 @@
         </div>
         <div class="right_main">
             <div class="parent_container flex">
-                <section class="common_property flex about_section">Hi, I am Aman Gupta.</section>
-                <section class="common_property flex skills_section">Skills</section>
+                <section class="common_property flex about_section">
+                    <div class="A">
+                        <div class="B">
+                            <button class="C">H</button>
+                            <button class="D">i</button>
+                            <button class="E">,</button>
+                            <button class="F">I</button>
+                            <button class="G">A</button>
+                            <button class="H">M</button>
+                            <button class="I">A</button>
+                            <button class="J">M</button>
+                            <button class="K">A</button>
+                            <button class="L">N</button>
+                            <button class="M">.</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="common_property flex skills_section">
+                    Skills
+                    <span class="Sphere"></span>
+                </section>
                 <section class="common_property flex projects_section">
                     <h2>PROJECTS</h2>
                     <div class="projects_grid">
@@ -67,11 +85,47 @@
                 </section>
                 <section class="common_property flex experience_section">Experience</section>
                 <section class="common_property flex achievments_section">Achievments</section>
-                <section class="common_property flex contact_section">Contact</section>
+                <section class="common_property flex contact_section">
+                    <img class="map" src="images/Map.png" alt="map">
+                </section>
             </div>
         </div>
     </div>
+    <!-- Including the TagCloud.js script CDN in the document    -->
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <script>
+        const Texts = [
+            'HTML', 'CSS', 'JAVASCRIPT',
+            'GIT', 'MONGOOSE', 'REACT JS',
+            'PYTHON', 'MARKDOWN','POSTMAN',
+            'VS CODE','BCRYPT JS','PUG',
+            'SOCKET IO','TOUCH TYPING',
+            'BOOTSTRAP', 'NODE JS', 'MONGODB',
+            'EXPRESS', 'C', 'C++'
+        ];
 
+        var tagCloud = TagCloud('.Sphere', Texts, {
+
+            // Sphere radius in px
+            radius: 300,
+
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: 'fast',
+            initSpeed: 'fast',
+
+            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+            direction: 135,
+
+            // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+            keep: true
+
+        });
+
+        // Giving color to each text in sphere
+        var color = '#0DFDD7 ';
+        document.querySelector('.Sphere').style.color = color;
+    </script>
 </body>
 
 </html>
