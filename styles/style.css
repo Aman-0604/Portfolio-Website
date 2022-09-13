@@ -1,26 +1,28 @@
 body{
-    margin: -8px;
+    margin: 0px;
 }
                                                 /* App.css */
 .main{
     display: flex;
     flex-direction: row;
-    width: 100%;
 }
 .left_main{
-    position: fixed;
+    position: sticky;
+    top: 0px;
+    width: 9rem;
+    height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #181818;
-    width: 9%;
-    height: 100%;
     border-right: 1px solid #909096;
 }
 .right_main{
+    display: flex;
+    flex-direction: column;
     background-color: #1D1D1D;
-    width: 100%;
+    width: 100vw;
 }
   
   
@@ -74,13 +76,16 @@ img{
                                             /* Main.css */
 
 .parent_container{
-    height:4800px;
+    display: flex;
+    flex-direction: column;
 }
 .common_property{
     color: white;
-    height:100%;
-    width: 80%;
-    border:1px solid white;
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
 }
 .projects_grid{
     display: grid;
@@ -118,25 +123,18 @@ img{
 }
                                             /* Jelly Bounce Text */
 
-.A{
-    height :100px;
-    width:100px;
-    display:flex;
-    align-items: center;
-    top: 30%;
+.jelly-text-1{
+    display: flex;
+    flex-direction: row;
 }
-.B{
-    border: none;
-    outline: none;
-    color: white;
-    font-size: 0%;
-    position: fixed;
-    left: 130px;
-    top:220px;
+.jelly-text-2{
+    display: flex;
+    flex-direction: row;
 }
 button{
     background-color: transparent;
     color: white;
+    font-family: 'Maven Pro', sans-serif;
     border: none;
     font-size: 70px;
     display: flex;
@@ -157,98 +155,141 @@ button:hover{
         transform : scale(0.7,1.2);
     }
 }
-.C{
+/* .C{
     top: 0px;
     left: 50px;
-    position: absolute;
+    position: relative;
+}
+.C::before{
+    content: '<h1>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1.8rem;
+    position: relative;
+    margin-top: 3.8rem;
+    margin-left: 2rem;
 }
 .D{
     top : 0px;
     left :100px;
-    position: absolute;
+    position: relative;
 }
 .E{
     top: 0px;
     left: 115px;
-    position: absolute;
+    position: relative;
 }
 .F{
     top: 85px;
     left: 50px;
-    position: absolute;
+    position: relative;
 }
 .G{
     top: 85px;
-    left: 90px;
-    position: absolute;
+    left: 70px;
+    position: relative;
 }
 .H{
     top: 85px;
-    left: 140px;
-    position: absolute;
+    left: 90px;
+    position: relative;
 }
 .I{
     top: 85px;
-    left: 220px;
-    position: absolute;
+    left: 195px;
+    position: relative;
 }
 .J{
     top: 85px;
-    left: 270px;
-    position: absolute;
+    left: 245px;
+    position: relative;
 }
 .K{
     top: 85px;
-    left: 332px;
-    position: absolute;
+    left: 310px;
+    position: relative;
 }
 .L{
     top: 85px;
-    left: 380px;
-    position: absolute;
+    left: 347px;
+    position: relative;
 }
 .M{
     top: 85px;
-    left: 427px;
-    position: absolute;
+    left: 410px;
+    position: relative;
 }
 .N{
-    top: 185px;
-    left: 160px;
-    position: absolute;
+    top: 85px;
+    left: 450px;
+    position: relative;
 }
 .O{
-    top: 185px;
-    left: 210px;
-    position: absolute;
+    top: 85px;
+    left: 485px;
+    position: relative;
 }
 .P{
-    top: 185px;
-    left: 250px;
-    position: absolute;
+    top: 85px;
+    left: 525px;
+    position: relative;
+}
+.Q{
+    top: 85px;
+    left: 550px;
+    position: relative;
 }
 .R{
-    top: 188px;
-    left: 324px;
-    position: absolute;
+    top: 85px;
+    left: 600px;
+    position: relative;
+} */
+
+/* .R::after {
+    content: '<h1/>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1.8rem;
+    position: relative;
+    margin-top: 3.8rem;
+    margin-left: 2rem;
 }
-.S{
-    top: 185px;
-    left: 340px;
-    position: absolute;
+.subtitle::before {
+    content: '<p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1.8rem;
+    position: relative;
+    margin-top: 3.8rem;
+    margin-left: 2rem;
+} */
+.subtitle{
+    color: #8D8D8D;
+    font-family: sans-serif;
+    font-size: 16px;
 }
-.T{
-    top: 185px;
-    left: 380px;
-    position: absolute;
+/* .subtitle::after {
+    content: '<p/>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1.8rem;
+    position: relative;
+    margin-top: 3.8rem;
+    margin-left: 2rem;
+} */
+
+                                        /* Sections */
+.about_section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
-.U{
-    top: 185px;
-    left: 418px;
-    position: absolute;
-}
-.V{
-    top: 185;
-    left: 458px;
-    position: absolute;
+
+                                        /* Media Query */
+@media screen and (max-width: 980px){
+    .left_main{
+        display: none;
+    }
 }
