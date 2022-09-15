@@ -16,7 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #181818;
-    border-right: 1px solid #909096;
+    /* border-right: 1px solid #909096; */
 }
 .right_main{
     display: flex;
@@ -55,7 +55,8 @@ body{
     height: inherit;
     font-size: 16px;
     color: #909096;
-    border: 0.5px solid #909096;
+    font-family: "Open Sans",sans-serif;
+    border-bottom: 1px solid #282828;
     width: 100%;
 }
 .main-sections:hover{
@@ -80,12 +81,21 @@ img{
     flex-direction: column;
 }
 .common_property{
-    color: white;
-    height:100vh;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+    color: white;
+    height:100vh;
+    overflow: scroll;
 
+}
+.skills_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
 }
 .projects_grid{
     display: grid;
@@ -106,21 +116,24 @@ img{
 
                                          /* Applying CSS to sphere */
 .tagcloud {
-  display: inline-block;
-  top: 100px;
-  left: 32%;
+  display: flex;
   font-weight: bold;
   font-family: "Open Sans",sans-serif;
   letter-spacing: 1px;
   font-size: 20px;
 }
+.Sphere{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
                                             /* Map in contacts */
-
 .map{
-    width : 700px;
-    height: 700px;
-}
+    margin-top: 25px;
+    width: 700px;
+    height: 770px;
+ }
                                             /* Jelly Bounce Text */
 
 .jelly-text-1{
@@ -128,6 +141,22 @@ img{
     flex-direction: row;
 }
 .jelly-text-2{
+    display: flex;
+    flex-direction: row;
+}
+.jelly-text-3{
+    display: flex;
+    flex-direction: row;
+}
+.jelly-text-4{
+    display: flex;
+    flex-direction: row;
+}
+.jelly-text-5{
+    display: flex;
+    flex-direction: row;
+}
+.jelly-text-6{
     display: flex;
     flex-direction: row;
 }
@@ -155,128 +184,133 @@ button:hover{
         transform : scale(0.7,1.2);
     }
 }
-/* .C{
-    top: 0px;
-    left: 50px;
+.ASH{
     position: relative;
+    left: 30px;
 }
-.C::before{
+.ASI{
+    position: relative;
+    left :16px;
+}
+.ASCOMMA{
+    position: relative;
+    left: 2px;
+}
+.ASI2{
+    position: relative;
+    left: 30px;
+}
+.ASAPOSTROPHE{
+    position: relative;
+    left: 15px;
+}
+.ASM{
+    position: relative;
+    left: 2px;
+}
+.ASA{
+    position: relative;
+    left: 20px;
+}
+.ASM2{
+    position: relative;
+    left: 10px;
+}
+.ASA2{
+    position: relative;
+    left: 0px;
+}
+.ASN{
+    position: relative;
+    left: -10px;
+}
+.ASG{
+    position: relative;
+    left: 5px;
+}
+.ASU{
+    position: relative;
+    left: -8px;
+}
+.ASP{
+    position: relative;
+    left: -19px;
+}
+.AST{
+    position: relative;
+    left: -29px;
+}
+.ASA3{
+    position: relative;
+    left: -39px;
+}
+.ASDOT{
+    position: relative;
+    left: -48px;
+}
+.jelly-text-1::after{
     content: '<h1>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     position: relative;
-    margin-top: 3.8rem;
-    margin-left: 2rem;
+    top: -23px;
+    left: -110px;
 }
-.D{
-    top : 0px;
-    left :100px;
-    position: relative;
-}
-.E{
-    top: 0px;
-    left: 115px;
-    position: relative;
-}
-.F{
-    top: 85px;
-    left: 50px;
-    position: relative;
-}
-.G{
-    top: 85px;
-    left: 70px;
-    position: relative;
-}
-.H{
-    top: 85px;
-    left: 90px;
-    position: relative;
-}
-.I{
-    top: 85px;
-    left: 195px;
-    position: relative;
-}
-.J{
-    top: 85px;
-    left: 245px;
-    position: relative;
-}
-.K{
-    top: 85px;
-    left: 310px;
-    position: relative;
-}
-.L{
-    top: 85px;
-    left: 347px;
-    position: relative;
-}
-.M{
-    top: 85px;
-    left: 410px;
-    position: relative;
-}
-.N{
-    top: 85px;
-    left: 450px;
-    position: relative;
-}
-.O{
-    top: 85px;
-    left: 485px;
-    position: relative;
-}
-.P{
-    top: 85px;
-    left: 525px;
-    position: relative;
-}
-.Q{
-    top: 85px;
-    left: 550px;
-    position: relative;
-}
-.R{
-    top: 85px;
-    left: 600px;
-    position: relative;
-} */
 
-/* .R::after {
-    content: '<h1/>';
+.jelly-text-2::after {
+    content: '</h1>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     position: relative;
-    margin-top: 3.8rem;
-    margin-left: 2rem;
+    top: 60px;
+    left: -37px;
 }
-.subtitle::before {
+.ASDOT::before {
     content: '<p>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     position: relative;
-    margin-top: 3.8rem;
-    margin-left: 2rem;
-} */
+    top: 75px;
+    left: -575px;
+}
 .subtitle{
     color: #8D8D8D;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    padding-top: 18px;
+    padding-left: 38px;
+
 }
-/* .subtitle::after {
-    content: '<p/>';
+.subtitle::after {
+    content: '</p>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     position: relative;
-    margin-top: 3.8rem;
-    margin-left: 2rem;
-} */
+    top: 23px;
+    left: -260px;
+}
+.initial-tag-head::after {
+    content: '<html>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1.3rem;
+    position: relative;
+    top: -200px;
+    left: 8px;
+}
+.initial-tag-body::after {
+    content: '<body>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1.3rem;
+    position: relative;
+    top: -220px;
+    left: 19px;
+}
 
                                         /* Sections */
 .about_section{
@@ -292,4 +326,162 @@ button:hover{
     .left_main{
         display: none;
     }
+}
+
+                                        /* Skills jelly bounce */
+
+.SS1{
+    position: relative;
+    left: 30px;
+}
+.SK{
+    position: relative;
+    left :16px;
+}
+.SI{
+    position: relative;
+    left: 2px;
+}
+.SL1{
+    position: relative;
+    left: -8px;
+}
+.SL2{
+    position: relative;
+    left: -20px;
+}
+.SS2{
+    position: relative;
+    left: -31px;
+}
+
+.skills-content{
+    font-size: 1.2rem;
+    font-family: "Open Sans",sans-serif;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-left: 38px;
+}
+                                        /* Project jelly bounce */
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.PP{
+    position: relative;
+    left: 30px;
+}
+.PR{
+    position: relative;
+    left :16px;
+}
+.PO{
+    position: relative;
+    left: 2px;
+}
+.PJ{
+    position: relative;
+    left: -8px;
+}
+.PE{
+    position: relative;
+    left: -20px;
+}
+.PC{
+    position: relative;
+    left: -31px;
+}
+.PT{
+    position: relative;
+    left: -38px;
+}
+.PS{
+    position: relative;
+    left: -48px;
+}
+                                        /* Achievment jelly bounce */
+.achievments{
+    display: flex;
+    flex-direction: column;
+}
+
+.AA{
+    position: relative;
+    left: 30px;
+}
+.AC{
+    position: relative;
+    left :16px;
+}
+.AH{
+    position: relative;
+    left: 4px;
+}
+.AI{
+    position: relative;
+    left: -8px;
+}
+.AE{
+    position: relative;
+    left: -22px;
+}
+.AV{
+    position: relative;
+    left: -33px;
+}
+.AM{
+    position: relative;
+    left: -43px;
+}
+.AE2{
+    position: relative;
+    left: -53px;
+}
+.AN{
+    position: relative;
+    left: -62px;
+}
+.AT{
+    position: relative;
+    left: -74px;
+}
+.AS{
+    position: relative;
+    left: -83px;
+}
+                                        /* Contact jelly bounce */
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.CC{
+    position: relative;
+    left: 30px;
+}
+.CO{
+    position: relative;
+    left :16px;
+}
+.CN{
+    position: relative;
+    left: 4px;
+}
+.CT{
+    position: relative;
+    left: -8px;
+}
+.CA{
+    position: relative;
+    left: -22px;
+}
+.CC2{
+    position: relative;
+    left: -33px;
+}
+.CT2{
+    position: relative;
+    left: -43px;
 }
