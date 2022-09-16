@@ -1,16 +1,18 @@
-body{
+body {
     margin: 0px;
 }
-                                                /* App.css */
-.main{
+
+/* App.css */
+.main {
     display: flex;
     flex-direction: row;
 }
-.left_main{
+
+.left_main {
     position: sticky;
     top: 0px;
     width: 9rem;
-    height:100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,149 +20,170 @@ body{
     background-color: #181818;
     /* border-right: 1px solid #909096; */
 }
-.right_main{
+
+.right_main {
     display: flex;
     flex-direction: column;
     background-color: #1D1D1D;
     width: 100vw;
 }
-  
-  
-                                            /* Navbar.css */
+
+
+/* Navbar.css */
 
 
 /* Will add flex class to any div so as to make it a flex box */
-.flex{
+.flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.top{
+a{
+    text-decoration: none;
+}
+.top {
     text-align: center;
     width: 100%;
     height: 33%;
 }
-.middle{
+
+.middle {
     width: 100%;
     height: 34%;
 }
-.bottom{
+
+.bottom {
     text-align: center;
     height: 33%;
 }
 
 /* Hovering on any of the main sections  */
-.main-sections{
+.main-sections {
     height: inherit;
     font-size: 16px;
     color: #909096;
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans", sans-serif;
     border-bottom: 1px solid #282828;
     width: 100%;
 }
-.main-sections:hover{
+
+.main-sections:hover {
     color: #0DFDD7;
     cursor: pointer;
 }
+
 /* Icon styling */
-svg{
+svg {
     padding: 5px;
     color: #909096;
 }
 
-img{
+.logo-img {
     width: 50px;
 }
 
 
-                                            /* Main.css */
+/* Main.css */
 
-.parent_container{
+.parent_container {
     display: flex;
     flex-direction: column;
 }
-.common_property{
+
+.common_property {
     display: flex;
     flex-direction: column;
     color: white;
-    height:100vh;
+    height: 100vh;
     overflow: scroll;
 
 }
-.skills_section{
+
+.skills_section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.skills{
+
+.skills {
     display: flex;
     flex-direction: column;
 }
-.projects_grid{
+
+.projects_grid {
     display: grid;
     width: 80%;
     gap: 1rem;
     justify-content: center;
     grid-template-columns: 33% 33% 33%;
 }
-.grid_item_common{
+
+.grid_item_common {
     border: 1px solid white;
     background-color: aqua;
     color: black;
 }
-                                            
-                                    /*     Importing Google fonts    */
- @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*     Importing Google fonts    */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
-                                         /* Applying CSS to sphere */
+/* Applying CSS to sphere */
 .tagcloud {
-  display: flex;
-  font-weight: bold;
-  font-family: "Open Sans",sans-serif;
-  letter-spacing: 1px;
-  font-size: 20px;
+    display: flex;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
 }
-.Sphere{
+
+.Sphere {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-                                            /* Map in contacts */
-.map{
+/* Map in contacts */
+.map {
     margin-top: 25px;
     width: 700px;
     height: 770px;
- }
-                                            /* Jelly Bounce Text */
+}
 
-.jelly-text-1{
+/* Jelly Bounce Text */
+
+.jelly-text-1 {
     display: flex;
     flex-direction: row;
 }
-.jelly-text-2{
+
+.jelly-text-2 {
     display: flex;
     flex-direction: row;
 }
-.jelly-text-3{
+
+.jelly-text-3 {
     display: flex;
     flex-direction: row;
 }
-.jelly-text-4{
+
+.jelly-text-4 {
     display: flex;
     flex-direction: row;
 }
-.jelly-text-5{
+
+.jelly-text-5 {
     display: flex;
     flex-direction: row;
 }
-.jelly-text-6{
+
+.jelly-text-6 {
     display: flex;
     flex-direction: row;
 }
-button{
+
+button {
     background-color: transparent;
     color: white;
     font-family: 'Maven Pro', sans-serif;
@@ -168,89 +191,110 @@ button{
     font-size: 70px;
     display: flex;
 }
-button:hover{
+
+button:hover {
     color: #0DFDD7;
     animation: animate 0.6s;
     text-shadow: none;
 }
-@keyframes animate{
-    25%{
-        transform : scale(0.8,1.3);
+
+@keyframes animate {
+    25% {
+        transform: scale(0.8, 1.3);
     }
-    50%{
-        transform : scale(1.1,0.8);
+
+    50% {
+        transform: scale(1.1, 0.8);
     }
-    75%{
-        transform : scale(0.7,1.2);
+
+    75% {
+        transform: scale(0.7, 1.2);
     }
 }
-.ASH{
+
+.ASH {
     position: relative;
     left: 30px;
 }
-.ASI{
+
+.ASI {
     position: relative;
-    left :16px;
+    left: 16px;
 }
-.ASCOMMA{
+
+.ASCOMMA {
     position: relative;
     left: 2px;
 }
-.ASI2{
+
+.ASI2 {
     position: relative;
     left: 30px;
 }
-.ASAPOSTROPHE{
+
+.ASAPOSTROPHE {
     position: relative;
     left: 15px;
 }
-.ASM{
+
+.ASM {
     position: relative;
     left: 2px;
 }
-.ASA{
+
+.ASA {
     position: relative;
     left: 20px;
 }
-.ASM2{
+
+.ASM2 {
     position: relative;
     left: 10px;
 }
-.ASA2{
+
+.ASA2 {
     position: relative;
     left: 0px;
 }
-.ASN{
+
+.ASN {
     position: relative;
     left: -10px;
 }
-.ASG{
+
+.ASG {
     position: relative;
     left: 5px;
 }
-.ASU{
+
+.ASU {
     position: relative;
     left: -8px;
 }
-.ASP{
+
+.ASP {
     position: relative;
     left: -19px;
 }
-.AST{
+
+.AST {
     position: relative;
     left: -29px;
 }
-.ASA3{
+
+.ASA3 {
     position: relative;
     left: -39px;
 }
-.ASDOT{
+
+.ASDOT {
     position: relative;
     left: -48px;
 }
-.jelly-text-1::after{
+
+.jelly-text-1::after {
     content: '<h1>';
-    font-family: 'La Belle Aurore',cursive;
+    font-family: 'La Belle Aurore', cursive;
     color: #515152;
     font-size: 1.3rem;
     position: relative;
@@ -260,23 +304,25 @@ button:hover{
 
 .jelly-text-2::after {
     content: '</h1>';
-    font-family: 'La Belle Aurore',cursive;
+    font-family: 'La Belle Aurore', cursive;
     color: #515152;
     font-size: 1.3rem;
     position: relative;
     top: 60px;
     left: -37px;
 }
+
 .ASDOT::before {
     content: '<p>';
-    font-family: 'La Belle Aurore',cursive;
+    font-family: 'La Belle Aurore', cursive;
     color: #515152;
     font-size: 1.3rem;
     position: relative;
     top: 75px;
     left: -575px;
 }
-.subtitle{
+
+.subtitle {
     color: #8D8D8D;
     font-family: sans-serif;
     font-size: 18px;
@@ -284,27 +330,30 @@ button:hover{
     padding-left: 38px;
 
 }
+
 .subtitle::after {
     content: '</p>';
-    font-family: 'La Belle Aurore',cursive;
+    font-family: 'La Belle Aurore', cursive;
     color: #515152;
     font-size: 1.3rem;
     position: relative;
     top: 23px;
     left: -260px;
 }
+
 .initial-tag-head::after {
     content: '<html>';
-    font-family: 'La Belle Aurore',cursive;
+    font-family: 'La Belle Aurore', cursive;
     color: #515152;
     font-size: 1.3rem;
     position: relative;
     top: -200px;
     left: 8px;
 }
+
 .initial-tag-body::after {
     content: '<body>';
-    font-family: 'La Belle Aurore',cursive;
+    font-family: 'La Belle Aurore', cursive;
     color: #515152;
     font-size: 1.3rem;
     position: relative;
@@ -312,8 +361,8 @@ button:hover{
     left: 19px;
 }
 
-                                        /* Sections */
-.about_section{
+/* Sections */
+.about_section {
 
     display: flex;
     flex-direction: column;
@@ -321,167 +370,266 @@ button:hover{
 
 }
 
-                                        /* Media Query */
-@media screen and (max-width: 980px){
-    .left_main{
+/* Media Query */
+@media screen and (max-width: 980px) {
+    .left_main {
         display: none;
     }
 }
 
-                                        /* Skills jelly bounce */
+/* Skills jelly bounce */
 
-.SS1{
+.SS1 {
     position: relative;
     left: 30px;
 }
-.SK{
+
+.SK {
     position: relative;
-    left :16px;
+    left: 16px;
 }
-.SI{
+
+.SI {
     position: relative;
     left: 2px;
 }
-.SL1{
+
+.SL1 {
     position: relative;
     left: -8px;
 }
-.SL2{
+
+.SL2 {
     position: relative;
     left: -20px;
 }
-.SS2{
+
+.SS2 {
     position: relative;
     left: -31px;
 }
 
-.skills-content{
+.skills-content {
     font-size: 1.2rem;
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.5;
     margin-top: 10px;
     margin-left: 38px;
 }
-                                        /* Project jelly bounce */
-.projects{
+
+/* Project jelly bounce */
+.projects {
     display: flex;
     flex-direction: column;
 }
 
-.PP{
+.PP {
     position: relative;
     left: 30px;
 }
-.PR{
+
+.PR {
     position: relative;
-    left :16px;
+    left: 16px;
 }
-.PO{
+
+.PO {
     position: relative;
     left: 2px;
 }
-.PJ{
+
+.PJ {
     position: relative;
     left: -8px;
 }
-.PE{
+
+.PE {
     position: relative;
     left: -20px;
 }
-.PC{
+
+.PC {
     position: relative;
     left: -31px;
 }
-.PT{
+
+.PT {
     position: relative;
     left: -38px;
 }
-.PS{
+
+.PS {
     position: relative;
     left: -48px;
 }
-                                        /* Achievment jelly bounce */
-.achievments{
+
+/* Achievment jelly bounce */
+.achievments {
     display: flex;
     flex-direction: column;
 }
 
-.AA{
+.AA {
     position: relative;
     left: 30px;
 }
-.AC{
+
+.AC {
     position: relative;
-    left :16px;
+    left: 16px;
 }
-.AH{
+
+.AH {
     position: relative;
     left: 4px;
 }
-.AI{
+
+.AI {
     position: relative;
     left: -8px;
 }
-.AE{
+
+.AE {
     position: relative;
     left: -22px;
 }
-.AV{
+
+.AV {
     position: relative;
     left: -33px;
 }
-.AM{
+
+.AM {
     position: relative;
     left: -43px;
 }
-.AE2{
+
+.AE2 {
     position: relative;
     left: -53px;
 }
-.AN{
+
+.AN {
     position: relative;
     left: -62px;
 }
-.AT{
+
+.AT {
     position: relative;
     left: -74px;
 }
-.AS{
+
+.AS {
     position: relative;
     left: -83px;
 }
-                                        /* Contact jelly bounce */
-.contact{
+
+/* Contact jelly bounce */
+.contact {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.CC{
+.CC {
     position: relative;
     left: 30px;
 }
-.CO{
+
+.CO {
     position: relative;
-    left :16px;
+    left: 16px;
 }
-.CN{
+
+.CN {
     position: relative;
     left: 4px;
 }
-.CT{
+
+.CT {
     position: relative;
     left: -8px;
 }
-.CA{
+
+.CA {
     position: relative;
     left: -22px;
 }
-.CC2{
+
+.CC2 {
     position: relative;
     left: -33px;
 }
-.CT2{
+
+.CT2 {
     position: relative;
     left: -43px;
 }
+
+/* Achievments Cards */
+.achievments-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+}
+.achievments-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 20px;
+    height: 35vh;
+    overflow: scroll;
+    /* font-size: 30px; */
+    /* text-align: center; */
+}
+
+.achievments-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.achievments-card-info {
+    padding: 2px 16px;
+    overflow: scroll;
+}
+
+.achievments-card-img {
+    border-radius: 5px 5px 0 0;
+    width: 18rem;
+  
+
+}
+/* Projects Cards */
+.projects-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+}
+.projects-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 20px;
+    height: 35vh;
+    overflow: scroll;
+    /* font-size: 30px; */
+    /* text-align: center; */
+}
+
+.projects-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.projects-card-info {
+    padding: 2px 16px;
+    overflow: scroll;
+}
+
+.projects-card-img {
+    border-radius: 5px 5px 0 0;
+    width: 18rem;
+  
+
+}
+
+
+
