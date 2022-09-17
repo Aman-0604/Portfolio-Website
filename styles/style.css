@@ -54,7 +54,6 @@ a {
     width: 100%;
     height: 30%;
 }
-
 .bottom {
     text-align: center;
     height: 35%;
@@ -63,14 +62,17 @@ a {
 /* Hovering on any of the main sections  */
 .main-sections {
     height: inherit;
-    font-size: 16px;
-    color: #909096;
-    font-family: "Open Sans", sans-serif;
     border-bottom: 1px solid #282828;
     width: 100%;
 }
 
-.main-sections:hover {
+.main-sections a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #909096;
+}
+.main-sections a:hover {
     color: #0DFDD7;
     cursor: pointer;
 }
@@ -107,25 +109,18 @@ svg {
     flex-direction: row;
     justify-content: space-between;
 }
+@media screen and (max-width :1350px) {
+    .skills_section{
+        flex-direction: column;
+        height: inherit;
+    }
+}
 
 .skills {
     display: flex;
     flex-direction: column;
 }
 
-.projects_grid {
-    display: grid;
-    width: 80%;
-    gap: 1rem;
-    justify-content: center;
-    grid-template-columns: 33% 33% 33%;
-}
-
-.grid_item_common {
-    border: 1px solid white;
-    background-color: aqua;
-    color: black;
-}
 
 /*     Importing Google fonts    */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -151,6 +146,12 @@ svg {
     margin-top: 25px;
     width: 700px;
     height: 770px;
+}
+@media screen and (max-width : 1350px) {
+    .map{
+        width: 90%;
+        height:90%;
+    }
 }
 
 /* Jelly Bounce Text */
@@ -532,6 +533,14 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
 }
+/* Media Query */
+@media screen and (max-width: 1350px) {
+    .contact{
+        flex-direction: column;
+    }
+
+}
+
 
 .CC {
     position: relative;
@@ -567,6 +576,14 @@ button:hover {
     position: relative;
     left: -43px;
 }
+.CM {
+    position: relative;
+    left: -30px;
+}
+.CE {
+    position: relative;
+    left: -42px;
+}
 
 /* Achievments Cards */
 .achievments-grid {
@@ -575,13 +592,14 @@ button:hover {
     padding: 15px;
 }
 
+
 .achievments-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
     padding: 20px;
     height: 35vh;
-    overflow: scroll;
+    /* overflow: scroll; */
     /* font-size: 30px; */
     /* text-align: center; */
 }
@@ -592,7 +610,6 @@ button:hover {
 
 .achievments-card-info {
     padding: 2px 16px;
-    overflow: scroll;
 }
 
 .achievments-card-img {
@@ -608,6 +625,26 @@ button:hover {
     grid-template-columns: auto auto auto;
     padding: 15px;
 }
+/* Media Query */
+@media screen and (max-width: 700px) {
+    .achievments-grid {
+        grid-template-columns: auto;
+    }
+    .projects-grid {
+        grid-template-columns: auto;
+    }
+
+}
+/* Media Query */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .achievments-grid {
+        grid-template-columns: auto auto;
+    }
+    .projects-grid {
+        grid-template-columns: auto auto;
+    }
+
+}
 
 .projects-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -615,7 +652,7 @@ button:hover {
     border-radius: 5px;
     padding: 20px;
     height: 35vh;
-    overflow: scroll;
+    /* overflow: scroll; */
     /* font-size: 30px; */
     /* text-align: center; */
 }
@@ -626,12 +663,23 @@ button:hover {
 
 .projects-card-info {
     padding: 2px 16px;
-    overflow: scroll;
 }
 
 .projects-card-img {
     border-radius: 5px 5px 0 0;
     height: 20vh;
-
-
+}
+.contact_section{
+    height: inherit;
+}
+@media screen and (max-width : 1350px) {
+    .projects_section{
+        height: inherit;
+    }
+    .achievments_section{
+        height: inherit;
+    }
+    .contact_section{
+        height: inherit;
+    }
 }
