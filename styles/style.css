@@ -39,23 +39,25 @@ body {
     justify-content: center;
     align-items: center;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 .top {
     text-align: center;
     width: 100%;
-    height: 33%;
+    height: 35%;
 }
 
 .middle {
     width: 100%;
-    height: 34%;
+    height: 30%;
 }
 
 .bottom {
     text-align: center;
-    height: 33%;
+    height: 35%;
 }
 
 /* Hovering on any of the main sections  */
@@ -371,7 +373,7 @@ button:hover {
 }
 
 /* Media Query */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1135px) {
     .left_main {
         display: none;
     }
@@ -567,11 +569,12 @@ button:hover {
 }
 
 /* Achievments Cards */
-.achievments-grid{
+.achievments-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 15px;
 }
+
 .achievments-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -594,16 +597,18 @@ button:hover {
 
 .achievments-card-img {
     border-radius: 5px 5px 0 0;
-    width: 18rem;
-  
+    height: 20vh;
+
 
 }
+
 /* Projects Cards */
-.projects-grid{
+.projects-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 15px;
 }
+
 .projects-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -626,10 +631,7 @@ button:hover {
 
 .projects-card-img {
     border-radius: 5px 5px 0 0;
-    width: 18rem;
-  
+    height: 20vh;
+
 
 }
-
-
-
