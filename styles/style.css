@@ -179,7 +179,7 @@ svg {
     flex-direction: column;
     color: white;
     height: 100vh;
-    overflow: scroll;
+    overflow: hidden;
 
 }
 
@@ -816,14 +816,20 @@ button:hover {
     grid-template-columns: auto auto auto;
     padding: 15px;
 }
+.achievments-grid a{
+    text-decoration: none;
+    color:white
+}
 
 
 .achievments-card {
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
     padding: 20px;
-    height: 35vh;
+    height: inherit;
     /* overflow: scroll; */
     /* font-size: 30px; */
     /* text-align: center; */
@@ -838,6 +844,9 @@ button:hover {
 }
 
 .achievments-card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px 5px 0 0;
     height: 20vh;
 
@@ -850,7 +859,10 @@ button:hover {
     grid-template-columns: auto auto auto;
     padding: 15px;
 }
-
+.projects-grid a{
+    text-decoration: none;
+    color:white
+}
 /* Media Query */
 @media screen and (max-width: 700px) {
     .achievments-grid {
@@ -880,7 +892,7 @@ button:hover {
     transition: 0.3s;
     border-radius: 5px;
     padding: 20px;
-    height: 35vh;
+    height: inherit;
     /* overflow: scroll; */
     /* font-size: 30px; */
     /* text-align: center; */
@@ -914,5 +926,47 @@ button:hover {
 
     .contact_section {
         height: inherit;
+    }
+}
+@media screen and (min-width : 410px) and (max-width: 750px) {
+    .ASG {
+        position: relative;
+        left: 5px;
+    }
+    
+    .ASU {
+        position: relative;
+        left: -8px;
+    }
+    
+    .ASP {
+        position: relative;
+        left: -19px;
+    }
+    
+    .AST {
+        position: relative;
+        left: -29px;
+    }
+    
+    .ASA3 {
+        position: relative;
+        left: -39px;
+    }
+    
+    .ASDOT {
+        position: relative;
+        left: -48px;
+    }
+}
+.achievments-card:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:700px) {
+    .common_property {
+        height: inherit;
+    }
+    .about_section{
+        height:100vh
     }
 }
