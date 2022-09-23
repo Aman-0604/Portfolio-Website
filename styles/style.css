@@ -1229,6 +1229,17 @@ button:hover {
         left: -117px;
     }
 }
+.projects_section {
+    height: inherit;
+}
+
+.achievments_section{
+    height: inherit;
+}
+
+.contact_section {
+    height: inherit;
+}
 
 /* Achievments Cards */
 .achievments-grid {
@@ -1250,7 +1261,7 @@ button:hover {
     transition: 0.3s;
     border-radius: 5px;
     padding: 20px;
-    height: inherit;
+    height: 85%;
     /* overflow: scroll; */
     /* font-size: 30px; */
     /* text-align: center; */
@@ -1258,6 +1269,7 @@ button:hover {
 
 .achievments-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .achievments-card-info {
@@ -1269,12 +1281,31 @@ button:hover {
     justify-content: center;
     align-items: center;
     border-radius: 5px 5px 0 0;
-    height: 20vh;
+    width: 100%;
+    height: auto;
 
 
 }
 
 /* Projects Cards */
+.projects-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 20px;
+    height: 85%;
+    /* overflow: scroll; */
+    /* font-size: 30px; */
+    /* text-align: center; */
+}
+
+.projects-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -1284,6 +1315,19 @@ button:hover {
 .projects-grid a {
     text-decoration: none;
     color: white
+}
+
+.projects-card-info {
+    padding: 2px 16px;
+}
+
+.projects-card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    width: 50%;
+    height: auto;
 }
 
 /* Media Query */
@@ -1310,34 +1354,6 @@ button:hover {
 
 }
 
-.projects-card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    padding: 20px;
-    height: inherit;
-    /* overflow: scroll; */
-    /* font-size: 30px; */
-    /* text-align: center; */
-}
-
-.projects-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.projects-card-info {
-    padding: 2px 16px;
-}
-
-.projects-card-img {
-    border-radius: 5px 5px 0 0;
-    height: 20vh;
-}
-
-.contact_section {
-    height: inherit;
-}
-
 @media screen and (max-width : 1350px) {
     .projects_section {
         height: inherit;
@@ -1352,9 +1368,6 @@ button:hover {
     }
 }
 
-.achievments-card:hover {
-    cursor: pointer;
-}
 
 @media screen and (max-width:700px) {
     .common_property {
