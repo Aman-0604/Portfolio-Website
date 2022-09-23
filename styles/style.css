@@ -270,6 +270,11 @@ svg {
     letter-spacing: 1px;
     font-size: 20px;
 }
+@media screen and (max-width: 600px){
+    .tagcloud{
+        font-size: 10px;
+    }
+}
 
 .Sphere {
     display: flex;
