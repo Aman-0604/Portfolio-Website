@@ -207,11 +207,13 @@ svg {
     margin-right: 3rem;
     margin-top: 2rem;
 }
-.skills-info p{
+
+.skills-info p {
     font-size: 1.2rem;
     font-family: "Open Sans", sans-serif;
     line-height: 1.5;
 }
+
 .status-container {
     width: 100%;
     border-radius: 2px;
@@ -336,6 +338,12 @@ button {
     display: flex;
 }
 
+@media screen and (max-width : 680px) {
+    button {
+        font-size: 40px;
+    }
+}
+
 button:hover {
     color: #0DFDD7;
     animation: animate 0.6s;
@@ -455,8 +463,6 @@ button:hover {
     top: 60px;
     left: -37px;
 }
-
-
 .subtitle {
     color: #8D8D8D;
     font-family: sans-serif;
@@ -506,6 +512,156 @@ button:hover {
     left: 19px;
 }
 
+@media screen and (max-width: 680px) {
+    .ASH {
+        position: relative;
+        left: 30px;
+    }
+
+    .ASI {
+        position: relative;
+        left: 18px;
+    }
+
+    .ASCOMMA {
+        position: relative;
+        left: 3px;
+    }
+
+    .ASI2 {
+        position: relative;
+        left: 30px;
+    }
+
+    .ASAPOSTROPHE {
+        position: relative;
+        left: 16px;
+    }
+
+    .ASM {
+        position: relative;
+        left: 2px;
+    }
+
+    .ASA {
+        position: relative;
+        left: 4px;
+    }
+
+    .ASM2 {
+        position: relative;
+        left: -6px;
+    }
+
+    .ASA2 {
+        position: relative;
+        left: -16px;
+    }
+
+    .ASN {
+        position: relative;
+        left: -26px;
+    }
+
+    .ASG {
+        position: relative;
+        left: -23px;
+    }
+
+    .ASU {
+        position: relative;
+        left: -36px;
+    }
+
+    .ASP {
+        position: relative;
+        left: -47px;
+    }
+
+    .AST {
+        position: relative;
+        left: -57px;
+    }
+
+    .ASA3 {
+        position: relative;
+        left: -67px;
+    }
+
+    .ASDOT {
+        position: relative;
+        left: -76px;
+    }
+
+    .jelly-text-1::after {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: -23px;
+        left: -70px;
+    }
+
+    .jelly-text-2::after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: 36px;
+        left: -87px;
+    }
+    .subtitle {
+        color: #8D8D8D;
+        font-family: sans-serif;
+        font-size: 18px;
+        padding-top: 18px;
+        padding-left: 14px;
+    
+    }
+    
+    .subtitle::before {
+        content: '<p>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: -20px;
+        left: 11px;
+    }
+    
+    .subtitle::after {
+        content: '</p>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: 19px;
+        left: -259px;
+    }
+    
+    .initial-tag-head::after {
+        content: '<html>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: -200px;
+        left: 8px;
+    }
+    
+    .initial-tag-body::after {
+        content: '<body>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: -220px;
+        left: 19px;
+    }
+}
+
 /* Sections */
 .about_section {
 
@@ -523,6 +679,14 @@ button:hover {
 }
 
 /* Skills jelly bounce */
+
+.skills-content {
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    margin-top: 2rem;
+    margin-left: 38px;
+}
 
 .SS1 {
     position: relative;
@@ -574,12 +738,57 @@ button:hover {
     left: -75px;
 }
 
-.skills-content {
-    font-size: 1.2rem;
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.5;
-    margin-top: 2rem;
-    margin-left: 38px;
+
+@media screen and (max-width:680px) {
+    .SS1 {
+        position: relative;
+        left: 6px;
+    }
+
+    .SS1::before {
+        content: '<h2>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: -20px;
+        left: 16px;
+    }
+
+    .SS1::after {
+        content: '</h2>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: 39px;
+        left: -48px;
+    }
+
+    .SK {
+        position: relative;
+        left: -52px;
+    }
+
+    .SI {
+        position: relative;
+        left: -64px;
+    }
+
+    .SL1 {
+        position: relative;
+        left: -75px;
+    }
+
+    .SL2 {
+        position: relative;
+        left: -88px;
+    }
+
+    .SS2 {
+        position: relative;
+        left: -99px;
+    }
 }
 
 /* Project jelly bounce */
@@ -646,6 +855,68 @@ button:hover {
 .PS {
     position: relative;
     left: -94px;
+}
+
+@media screen and (max-width:680px) {
+    .PP {
+        position: relative;
+        left: 6px;
+    }
+
+    .PP::before {
+        content: '<h2>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: -20px;
+        left: 16px;
+    }
+
+    .PP::after {
+        content: '</h2>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: 39px;
+        left: -49px;
+    }
+
+    .PR {
+        position: relative;
+        left: -54px;
+    }
+
+    .PO {
+        position: relative;
+        left: -68px;
+    }
+
+    .PJ {
+        position: relative;
+        left: -79px;
+    }
+
+    .PE {
+        position: relative;
+        left: -90px;
+    }
+
+    .PC {
+        position: relative;
+        left: -101px;
+    }
+
+    .PT {
+        position: relative;
+        left: -109px;
+    }
+
+    .PS {
+        position: relative;
+        left: -118px;
+    }
 }
 
 /* Achievment jelly bounce */
@@ -729,6 +1000,83 @@ button:hover {
     left: -127px;
 }
 
+@media screen and (max-width: 680px) {
+    .AA {
+        position: relative;
+        left: 6px;
+    }
+
+    .AA::before {
+        content: '<h2>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: -20px;
+        left: 15px;
+    }
+
+    .AA::after {
+        content: '</h2>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: 43px;
+        left: -50px;
+    }
+
+    .AC {
+        position: relative;
+        left: -52px;
+    }
+
+    .AH {
+        position: relative;
+        left: -64px;
+    }
+
+    .AI {
+        position: relative;
+        left: -76px;
+    }
+
+    .AE {
+        position: relative;
+        left: -88px;
+    }
+
+    .AV {
+        position: relative;
+        left: -101px;
+    }
+
+    .AM {
+        position: relative;
+        left: -111px;
+    }
+
+    .AE2 {
+        position: relative;
+        left: -121px;
+    }
+
+    .AN {
+        position: relative;
+        left: -130px;
+    }
+
+    .AT {
+        position: relative;
+        left: -142px;
+    }
+
+    .AS {
+        position: relative;
+        left: -151px;
+    }
+}
+
 /* Contact jelly bounce */
 .contact {
     display: flex;
@@ -810,15 +1158,83 @@ button:hover {
     left: -86px;
 }
 
+@media screen and (max-width: 680px) {
+    .CC {
+        position: relative;
+        left: 6px;
+    }
+
+    .CC::before {
+        content: '<h2>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: -20px;
+        left: 15px;
+    }
+
+    .CC::after {
+        content: '</h2>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: 39px;
+        left: -49px;
+    }
+
+    .CO {
+        position: relative;
+        left: -52px;
+    }
+
+    .CN {
+        position: relative;
+        left: -64px;
+    }
+
+    .CT {
+        position: relative;
+        left: -77px;
+    }
+
+    .CA {
+        position: relative;
+        left: -90px;
+    }
+
+    .CC2 {
+        position: relative;
+        left: -101px;
+    }
+
+    .CT2 {
+        position: relative;
+        left: -111px;
+    }
+
+    .CM {
+        position: relative;
+        left: -105px;
+    }
+
+    .CE {
+        position: relative;
+        left: -117px;
+    }
+}
+
 /* Achievments Cards */
 .achievments-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 15px;
 }
-.achievments-grid a{
+
+.achievments-grid a {
     text-decoration: none;
-    color:white
+    color: white
 }
 
 
@@ -859,10 +1275,12 @@ button:hover {
     grid-template-columns: auto auto auto;
     padding: 15px;
 }
-.projects-grid a{
+
+.projects-grid a {
     text-decoration: none;
-    color:white
+    color: white
 }
+
 /* Media Query */
 @media screen and (max-width: 700px) {
     .achievments-grid {
@@ -928,45 +1346,17 @@ button:hover {
         height: inherit;
     }
 }
-@media screen and (min-width : 410px) and (max-width: 750px) {
-    .ASG {
-        position: relative;
-        left: 5px;
-    }
-    
-    .ASU {
-        position: relative;
-        left: -8px;
-    }
-    
-    .ASP {
-        position: relative;
-        left: -19px;
-    }
-    
-    .AST {
-        position: relative;
-        left: -29px;
-    }
-    
-    .ASA3 {
-        position: relative;
-        left: -39px;
-    }
-    
-    .ASDOT {
-        position: relative;
-        left: -48px;
-    }
-}
-.achievments-card:hover{
+
+.achievments-card:hover {
     cursor: pointer;
 }
+
 @media screen and (max-width:700px) {
     .common_property {
         height: inherit;
     }
-    .about_section{
-        height:100vh
+
+    .about_section {
+        height: 100vh
     }
 }
