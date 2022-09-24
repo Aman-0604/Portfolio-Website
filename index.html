@@ -294,13 +294,9 @@
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
     <script>
         let r=0;
-        let w = innerWidth;
+        let w = innerWidth;//returns width of the screen (data type : number)
         if(w > 600) r= 300;//should be 150 at breakpoint of 600px
         else r= 175;
-        // console.log(typeof w);
-        // console.log(w);
-        // console.log(typeof r);
-        // console.log(r);
         const Texts = [
             'HTML', 'CSS', 'JAVASCRIPT',
             'GIT', 'MONGOOSE', 'REACT JS',
