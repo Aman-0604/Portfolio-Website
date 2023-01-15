@@ -1327,11 +1327,11 @@ button:hover {
 }
 
 .projects-card-img {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px 5px 0 0;
-    width: 50%;
+    border-radius: 5px 5px 0 0; */
+    width: 100%;
     height: auto;
 }
 
