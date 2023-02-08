@@ -188,12 +188,12 @@ svg {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: inherit;
 }
 
 @media screen and (max-width :1350px) {
     .skills_section {
         flex-direction: column;
-        height: inherit;
     }
 }
 
