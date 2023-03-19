@@ -9,6 +9,39 @@ body {
     flex-direction: row;
 }
 
+.main-profile1 {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.main-profile2 {
+    z-index: 1;
+    position: absolute;
+    top: 160px;
+    right: 175px;
+}
+
+.main-profile3 {
+    z-index: 1;
+    position: absolute;
+    top: 318px;
+    right: 0px;
+}
+
+@media screen and (max-width:1375px) {
+    .main-profile1 {
+        z-index: -1;
+    }
+    .main-profile2 {
+        z-index: -1;
+    }
+    .main-profile3 {
+        z-index: -1;
+    }
+}
+
 .left_main {
     position: sticky;
     top: 0px;
@@ -107,6 +140,42 @@ body {
     border-radius: 50%;
 }
 
+.course {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #181818;
+    overflow-x: scroll;
+}
+
+.course a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+}
+
+.course a:hover {
+    color: #0DFDD7;
+}
+
+.course img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
 /* Navbar.css */
 
 
@@ -184,6 +253,13 @@ svg {
 
 }
 
+.coursework_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: inherit;
+}
+
 .skills_section {
     display: flex;
     flex-direction: row;
@@ -195,6 +271,11 @@ svg {
     .skills_section {
         flex-direction: column;
     }
+}
+
+.coursework {
+    display: flex;
+    flex-direction: column;
 }
 
 .skills {
@@ -684,6 +765,162 @@ button:hover {
 @media screen and (max-width: 1135px) {
     .left_main {
         display: none;
+    }
+}
+
+/* Coursework grid */
+.coursework-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+}
+
+.coursework-grid a {
+    text-decoration: none;
+    color: white
+}
+
+/* Coursework jelly bounce */
+
+.CWC {
+    position: relative;
+    left: 30px;
+}
+
+.CWC::before {
+    content: '<h2>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-size: 1.3rem;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.CWC::after {
+    content: '</h2>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-size: 1.3rem;
+    position: relative;
+    top: 65px;
+    left: -77px;
+}
+
+.CWO1 {
+    position: relative;
+    left: -28px;
+}
+
+.CWU {
+    position: relative;
+    left: -40px;
+}
+
+.CWR1 {
+    position: relative;
+    left: -50px;
+}
+
+.CWS {
+    position: relative;
+    left: -63px;
+}
+
+.CWE {
+    position: relative;
+    left: -75px;
+}
+
+.CWW {
+    position: relative;
+    left: -87px;
+}
+
+.CWO2 {
+    position: relative;
+    left: -100px;
+}
+
+.CWR2 {
+    position: relative;
+    left: -110px;
+}
+
+.CWK {
+    position: relative;
+    left: -120px;
+}
+
+@media screen and (max-width:680px) {
+    .CWC {
+        position: relative;
+        left: 6px;
+    }
+
+    .CWC::before {
+        content: '<h2>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: -20px;
+        left: 16px;
+    }
+
+    .CWC::after {
+        content: '</h2>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 1.3rem;
+        position: relative;
+        top: 39px;
+        left: -48px;
+    }
+
+    .CWO1 {
+        position: relative;
+        left: -52px;
+    }
+
+    .CWU {
+        position: relative;
+        left: -64px;
+    }
+
+    .CWR1 {
+        position: relative;
+        left: -75px;
+    }
+
+    .CWS {
+        position: relative;
+        left: -88px;
+    }
+
+    .CWE {
+        position: relative;
+        left: -99px;
+    }
+
+    .CWW {
+        position: relative;
+        left: -110px;
+    }
+
+    .CWO2 {
+        position: relative;
+        left: -122px;
+    }
+
+    .CWR2 {
+        position: relative;
+        left: -133px;
+    }
+
+    .CWK {
+        position: relative;
+        left: -144px;
     }
 }
 
@@ -1337,6 +1574,10 @@ button:hover {
 
 /* Media Query */
 @media screen and (max-width: 700px) {
+    .coursework-grid {
+        grid-template-columns: auto;
+    }
+
     .achievments-grid {
         grid-template-columns: auto;
     }
@@ -1349,6 +1590,10 @@ button:hover {
 
 /* Media Query */
 @media screen and (min-width: 700px) and (max-width: 1200px) {
+    .coursework-grid {
+        grid-template-columns: auto auto;
+    }
+
     .achievments-grid {
         grid-template-columns: auto auto;
     }
@@ -1492,9 +1737,11 @@ button:hover {
     .content {
         margin-right: 90px;
     }
-    .timeline{
+
+    .timeline {
         margin: 0 auto;
     }
+
     /* Place the timelime to the left */
     .timeline::after {
         left: 31px;
