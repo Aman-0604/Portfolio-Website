@@ -152,7 +152,8 @@ body {
     line-height: 50px;
     border-radius: 25px;
     background-color: #181818;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
+    word-wrap: break-word;
 }
 
 .course a {
